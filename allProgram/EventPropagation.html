@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="patentDiv" id="parentId">
+        <div class="childDiv" id="childId"></div>
+    </div>
+
+    <script>
+        const parentCall = () => {
+            alert('parent Div Call');
+            console.log('parent Div Call');
+        }
+
+        const childCall = () => {
+            alert('child Div Call');
+            console.log('child Div Call');
+            // event.stopPropagation();
+        }
+
+        parentId.addEventListener('click', parentCall, true);
+        childId.addEventListener('click', childCall, true);
+
+    </script>
+
+
+</body>
+</html>

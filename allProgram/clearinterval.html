@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div" style="text-align: center;">
+        <h1>
+            <p>can you stop me in the count of 5🫠?</p>
+            <br>
+            <button id="btn">Click here</button>
+            <button id="btn1">Stop</button>
+        </h1>
+    </div>
+
+    <script>
+        const stopNum = document.querySelector('p');
+        const btn = document.querySelector('#btn');
+        const stopInterval = document.querySelector('#btn1');
+        let timeRef;
+        let num = 0;
+
+        const showMyName = () => {
+            stopNum.innerHTML = "Loading....👻";
+            timeRef = setInterval(() => {
+                stopNum.innerHTML = `${num}`;
+                num++;
+            }, 1000);
+        };
+
+        btn.addEventListener('click', showMyName);
+        stopInterval.addEventListener('click', () => {
+            clearInterval(timeRef);
+        });
+
+        document.body.style.background="yellow";
+</script>
+</body>
+</html>

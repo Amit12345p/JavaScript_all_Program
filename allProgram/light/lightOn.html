@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-heading" style="text-align: center;">
+        <h1>Can you turn the light on?</h1>
+
+        <button onclick="document.getElementById('myImage').src='lighton.png' ">Turn on the light.</button>
+        <img src="lightoff.png" alt="lightOffPic" id="myImage" style="width: 150px;", height="150px">
+
+        <button onclick="document.getElementById('myImage').src='lightoff.png' ">Turn off the light.</button>
+
+    </div>
+
+    <script>
+        document.body.style.background='blue';
+    </script>
+</body>
+</html>

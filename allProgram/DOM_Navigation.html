@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="child-one">
+            <h1><p style="text-align: center;">i am child one</p></h1>  
+        </div>
+        <div class="child-two">
+            <h1><p style="text-align: center;">i am child two</p></h1>
+        </div>
+        <div class="child-three">
+            <h1><p style="text-align: center;">i am child three</p></h1>
+        </div>
+
+    </div>
+
+    <script>
+        const firstchild = document.body.firstElementChild.firstElementChild;
+        console.log(firstchild);
+        firstchild.style.color = 'red';
+
+        const childTwo = document.querySelector('.child-two');
+        console.log(childTwo);
+        childTwo.style.color = 'green';
+
+        const childThree = document.querySelector('.child-three');
+        console.log(childThree);
+        childThree.style.color = 'yellow';
+
+        document.body.style.background='grey';
+
+
+
+    </script>
+</body>
+</html>
